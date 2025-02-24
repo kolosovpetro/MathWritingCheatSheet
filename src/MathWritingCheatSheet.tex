@@ -1,0 +1,123 @@
+\documentclass[10pt,letterpaper,oneside,reqno]{amsart}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+\usepackage[pdfpagelabels,hyperindex,colorlinks=true,linkcolor=blue,urlcolor=magenta,citecolor=green]{hyperref}
+\usepackage{graphicx}
+\emergencystretch=1em
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
+\raggedbottom
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+
+\title[Mathematical writing Cheat Sheet]
+{Mathematical writing Cheat Sheet}
+\hypersetup{
+    pdftitle={Mathematical writing Cheat Sheet},
+    pdfsubject={
+        Mathematical writing
+    },
+    pdfauthor={Petro Kolosov},
+    pdfkeywords={
+        Mathematical writing
+    }
+}
+\begin{document}
+
+    \maketitle
+
+    \begin{multicols}{2}
+
+        \section*{Logical Progression and Reasoning}
+        \begin{itemize}
+            \item \textit{Therefore, it follows that...}
+            \item \textit{Thus, we conclude that...}
+            \item \textit{Hence, we obtain...}
+            \item \textit{From this, it follows that...}
+            \item \textit{As a result, we deduce that...}
+            \item \textit{Consequently, we see that...}
+            \item \textit{Since $C$ is always true, we must have...}
+        \end{itemize}
+
+        \section*{If-Then Statements and Assumptions}
+        \begin{itemize}
+            \item \textit{If \( X \) holds, then \( Y \) must also hold.}
+            \item \textit{Suppose that \( P \) is true; then we must have...}
+            \item \textit{Given that \( A \) is satisfied, it follows that...}
+            \item \textit{Assume that \( f(x) \) is differentiable; then we can write...}
+            \item \textit{Under these conditions, we can conclude that...}
+        \end{itemize}
+
+        \section*{Definitions and Explanations}
+        \begin{itemize}
+            \item \textit{We define \( f(x) \) as follows:}
+            \item \textit{The term "X" refers to...}
+            \item \textit{By definition, we have...}
+            \item \textit{Formally, a function is said to be continuous if...}
+            \item \textit{For the sake of clarity, we introduce the notation...}
+        \end{itemize}
+
+        \section*{Proofs and Justifications}
+        \begin{itemize}
+            \item \textit{To prove this, we proceed as follows...}
+            \item \textit{We now establish the claim by induction.}
+            \item \textit{Consider the case where...}
+            \item \textit{By contradiction, suppose that...}
+            \item \textit{This result follows directly from Theorem X.}
+            \item \textit{Applying Lemma Y, we obtain...}
+            \item \textit{Using the assumption that..., we see that...}
+        \end{itemize}
+
+        \columnbreak
+
+        \section*{Comparisons and Contrasts}
+        \begin{itemize}
+            \item \textit{Unlike the previous case, here we find that...}
+            \item \textit{This result is similar to... but differs in that...}
+            \item \textit{In contrast to..., we now observe that...}
+            \item \textit{A key distinction between these cases is that...}
+            \item \textit{While \( X \) holds in general, it does not necessarily imply \( Y \).}
+        \end{itemize}
+
+        \section*{Example and Counterexample}
+        \begin{itemize}
+            \item \textit{As an example, consider the function...}
+            \item \textit{For instance, if we take \( x = 2 \), then...}
+            \item \textit{A simple case to illustrate this is...}
+            \item \textit{However, the following counterexample shows that...}
+            \item \textit{To demonstrate that this condition is necessary, consider...}
+        \end{itemize}
+
+        \section*{Summarizing and Concluding}
+        \begin{itemize}
+            \item \textit{In summary, we have shown that...}
+            \item \textit{To conclude, we have established that...}
+            \item \textit{This completes the proof of Theorem X.}
+            \item \textit{The main result can be summarized as follows...}
+            \item \textit{Overall, these findings demonstrate that...}
+        \end{itemize}
+
+        \section*{Transitions Between Steps}
+        \begin{itemize}
+            \item \textit{Next, we consider the case where...}
+            \item \textit{Proceeding in a similar manner, we obtain...}
+            \item \textit{We now turn our attention to...}
+            \item \textit{Applying the previous result, we get...}
+            \item \textit{Rewriting the equation, we find that...}
+        \end{itemize}
+
+    \end{multicols}
+
+
+\end{document}

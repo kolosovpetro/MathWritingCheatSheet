@@ -25,15 +25,6 @@ pdflatex -file-line-error -interaction="nonstopmode" -synctex="1" -output-format
     -output-directory="$OutputDirectoryAbsPath" `
     -aux-directory="$AuxDirectoryAbsPath" $LatexFileAbsPath
 
-Write-Output "=============================================================================="
-
-Write-Output "Compiling bibtex ... "
-$WorkingDirectoryForBibtex = "$OutputDirectoryAbsPath/$LatexFileName"
-Write-Output "Working directory for bibtex: $WorkingDirectoryForBibtex"
-bibtex "$WorkingDirectoryForBibtex"
-
-Write-Output "=============================================================================="
-
 Write-Output "Compiling $LatexFileName second time... "
 Write-Output "Latex file: $LatexFileAbsPath"
 Write-Output "Output directory: $OutputDirectoryAbsPath"
