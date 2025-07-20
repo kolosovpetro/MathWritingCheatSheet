@@ -11,6 +11,7 @@
 \usepackage{array}
 \usepackage{multicol}
 \usepackage{etoolbox}
+\usepackage{caption}
 \apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
 \raggedbottom
 
@@ -20,6 +21,8 @@
 \newtheorem{example}[theorem]{Example}
 \newtheorem{conjecture}[theorem]{Conjecture}
 \newtheorem{definition}[theorem]{Definition}
+
+\renewcommand{\arraystretch}{1.2} % Line spacing in table
 
 \title[Mathematical writing Cheat Sheet]
 {Mathematical writing Cheat Sheet}
@@ -38,7 +41,6 @@
     \maketitle
 
     \begin{multicols}{2}
-
         \section*{Logical Progression and Reasoning}
         \begin{itemize}
             \item \textit{Therefore, it follows that...}
@@ -50,6 +52,7 @@
             \item \textit{Since $C$ is always true, we must have...}
         \end{itemize}
 
+
         \section*{If-Then Statements and Assumptions}
         \begin{itemize}
             \item \textit{If \( X \) holds, then \( Y \) must also hold.}
@@ -59,6 +62,7 @@
             \item \textit{Under these conditions, we can conclude that...}
         \end{itemize}
 
+
         \section*{Definitions and Explanations}
         \begin{itemize}
             \item \textit{We define \( f(x) \) as follows:}
@@ -67,6 +71,7 @@
             \item \textit{Formally, a function is said to be continuous if...}
             \item \textit{For the sake of clarity, we introduce the notation...}
         \end{itemize}
+
 
         \section*{Proofs and Justifications}
         \begin{itemize}
@@ -81,6 +86,7 @@
 
         \columnbreak
 
+
         \section*{Comparisons and Contrasts}
         \begin{itemize}
             \item \textit{Unlike the previous case, here we find that...}
@@ -89,6 +95,7 @@
             \item \textit{A key distinction between these cases is that...}
             \item \textit{While \( X \) holds in general, it does not necessarily imply \( Y \).}
         \end{itemize}
+
 
         \section*{Example and Counterexample}
         \begin{itemize}
@@ -99,6 +106,7 @@
             \item \textit{To demonstrate that this condition is necessary, consider...}
         \end{itemize}
 
+
         \section*{Summarizing and Concluding}
         \begin{itemize}
             \item \textit{In summary, we have shown that...}
@@ -108,6 +116,7 @@
             \item \textit{Overall, these findings demonstrate that...}
         \end{itemize}
 
+
         \section*{Transitions Between Steps}
         \begin{itemize}
             \item \textit{Next, we consider the case where...}
@@ -116,8 +125,35 @@
             \item \textit{Applying the previous result, we get...}
             \item \textit{Rewriting the equation, we find that...}
         \end{itemize}
-
     \end{multicols}
+
+    \clearpage
+
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|p{3.3cm}|p{3.6cm}|p{4.5cm}|}
+            \hline
+            \textbf{Name} & \textbf{When to Use}                                            & \textbf{Purpose}                                           & \textbf{Typical Use Case / Example}                                                      \\
+            \hline
+            Theorem       & To state a main or central result                               & Highlight core discoveries or results                      & Identity for odd powers; main result of the paper                                        \\
+            \hline
+            Lemma         & To prove a technical or supporting result                       & Used as a step in proving a theorem & Symmetry of coefficients; bounds or identities needed in proof \\
+            \hline
+            Corollary     & When a result follows immediately from a theorem or proposition & Show an obvious or elegant consequence & Special case of the main identity for fixed \( m \); simplification when \( n \) is even \\
+            \hline
+            Proposition   & For results of interest but not central                         & Formal observation or intermediate result & Recurrence for coefficients; structural property of a sum \\
+            \hline
+            Definition    & When introducing a new term or concept                          & Formalize language and notation used in the paper & Definition of symmetric polynomial; custom difference operator \\
+            \hline
+            Remark        & To provide intuition, clarification, or context                 & Connect ideas, explain motivation, relate to known results & Analogy with Faulhaber's formula; interpret symmetry \\
+            \hline
+            Example       & To illustrate a result or concept                               & Make abstract ideas more concrete                          & Compute identity for \( n^3 \); verify identity for \( m = 1 \)                          \\
+            \hline
+            Conjecture    & To pose a plausible but unproven claim                          & Suggest direction for future work & General form for even powers; observed numerical pattern \\
+            \hline
+        \end{tabular}
+        \caption{Guidelines for Using Mathematical Statement Types in Writing}\label{tab:table}
+    \end{table}
 
 
 \end{document}
